@@ -23,16 +23,14 @@ color_list = [(238, 246, 243), (246, 240, 244), (235, 241, 246), (1, 13, 31), (5
 tim = Turtle()
 tim.speed("fastest")
 turtle.colormode(255)
+tim.hideturtle()
 y_coordinate = 0
 for i in range(0, 10):
     x_coordinate = 0
     tim.setx(x_coordinate)
     for j in range(0, 10):
         tim.pendown()
-        tim.pencolor(random.choice(color_list))
-        tim.begin_fill()
-        tim.dot(20)
-        tim.end_fill()
+        tim.dot(20, random.choice(color_list))
         tim.penup()
         tim.forward(50)
     y_coordinate += 50
