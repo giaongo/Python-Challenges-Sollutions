@@ -26,10 +26,10 @@ tim.color("red")
 #         tim.right(turn_angle)
 
 # Challenge 4 - Draw a random walk
-direction = [0,90,180,270]
+# direction = [0,90,180,270]
 turtle.colormode(255)
-tim.pensize(10)
-tim.speed("fast")
+# tim.pensize(5)
+tim.speed("fastest")
 
 
 def random_color():
@@ -39,12 +39,17 @@ def random_color():
     color = (r, g, b)
     return color
 
+# for i in range(200):
+#     tim.pencolor(random_color())
+#     tim.forward(30)
+#     tim.setheading(random.choice(direction))
 
-for i in range(200):
+
+# Challenge 5 - Make a Spirograph
+for i in range(36):
+    tim.circle(50)
+    tim.left(10)
     tim.pencolor(random_color())
-    tim.forward(30)
-    tim.setheading(random.choice(direction))
-
 
 
 screen = Screen()
