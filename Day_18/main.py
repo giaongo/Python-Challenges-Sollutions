@@ -3,7 +3,7 @@ from turtle import Turtle, Screen
 import random
 tim = Turtle()
 tim.shape("turtle")
-tim.color("red")
+tim.color("black")
 # Challenge 1- Draw a square
 # for i in range(5):
 #     tim.forward(100)
