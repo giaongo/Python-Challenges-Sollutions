@@ -2,10 +2,10 @@
 These are collective solutions for Python Bootcamp's challenges
 
 ## Tables of contents 
-* [Day 18](#day-18)
-* [Day 19](#day-19)
+* [Day-18](#day-18)
+* [Day-19](#day-19)
 
-## Day 18: Turtle's module challenges  
+## Day-18: Turtle's module challenges  
 Day-18 comprises of solutions solved for challenges in the course: 
   * Challenge 1: Draw a square
   * Challenge 2: Draw a dashed line
@@ -20,5 +20,5 @@ Day-18 comprises of solutions solved for challenges in the course:
  ### Demo-6:
  ![giphy](https://user-images.githubusercontent.com/83873333/183920552-e4a1ae33-f140-48f0-a8a1-173d9726cd9c.gif)
  
- ## Day 19: Turtle's racing challenge
+ ## Day-19: Turtle's racing challenge
  Day-19 is to build a racing competition for 6 turtles along with x,y coordinates. At first, the program will ask for user pet and the racing starts right after. At the end, the user pet will be compared with the winner. Whether the pet is correct or incorrect, the result is still printed out to the console.
