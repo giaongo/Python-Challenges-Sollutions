@@ -1,5 +1,6 @@
 from turtle import Turtle, Screen
 import random
+from result import Result
 
 screen = Screen()
 screen.setup(width=600, height=600)
@@ -9,7 +10,7 @@ print(user_bet)
 
 turtle_players = []
 colors = ["red", "black", "pink", "brown", "blue", "violet"]
-
+betting_result = Result()
 x_coordinate = -280
 y_coordinate = 210
 for color in colors:
@@ -30,9 +31,10 @@ while is_race_on:
         if round(player.xcor()) >= 280:
             winner = player.pencolor()
             if winner == user_bet:
-                print(f"You have won the bet. {winner} turtle is winner")
+                result = "won"
             else:
-                print(f"You have lost the bet. {winner} turtle is winner")
+                result = "lost"
+            betting_result.print_result(result, winner)
             is_race_on = False
         random_distance = random.randint(0, 10)
         player.forward(random_distance)
