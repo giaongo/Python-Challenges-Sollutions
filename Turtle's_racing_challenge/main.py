@@ -5,7 +5,8 @@ from result import Result
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.title("Welcome To Turtle Racing")
-user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color: ")
+user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color ("
+                                                          "red/black/pink/brown/blue/violet): ")
 print(user_bet)
 
 turtle_players = []
