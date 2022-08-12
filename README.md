@@ -23,8 +23,16 @@ This comprises of solutions solved for challenges in the course:
  
 ## Turtle racing challenge
 This challenge is to build a racing competition for 6 turtles along with x,y coordinates. At first, the program will ask for user pet and the racing starts right after. At the end, the user pet will be compared with the winner. Whether the pet is correct or incorrect, the result is still printed out to the console.
+### Demo video
+<div align="center">
+
+[![Turtle racing game demo](http://img.youtube.com/vi/JDmcX2FC5yg/0.jpg)](http://www.youtube.com/watch?v=JDmcX2FC5yg "Turtle racing game demo")
+
+</div>
 
 ## Snack Game
+This challenge is to build a snake game where user can extend the snake length by eating the turtle and avoid colliding with the walls or own tail. The score increases whenever the snake is fed and game is over when unexpected collision happens. 
+
 ### Demo video
 <div align="center">
 
