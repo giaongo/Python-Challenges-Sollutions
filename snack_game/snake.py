@@ -5,7 +5,8 @@ UP = 90
 DOWN = 270
 LEFT = 180
 RIGHT = 0
-STARTING_POSITION = [(0,0),(-20,0),(-40,0)]
+STARTING_POSITION = [(0, 0), (-20, 0), (-40, 0)]
+
 
 class Snake:
 
@@ -50,3 +51,9 @@ class Snake:
 
     def extend(self):
         self.add_segment(self.snake_body[-1].position())
+
+    def collide_with_tail(self):
+        for element in self.snake_body[1:]:
+            if self.head.distance(element) < 10:
+                return True
+        return False

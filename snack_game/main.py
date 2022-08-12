@@ -28,7 +28,7 @@ while game_is_on:
     snake.move()
 
     # Detect collision with snake and food
-    if snake.head.distance(food) < 15:
+    if snake.head.distance(food) < 18:
         score.update_score()
         snake.extend()
         food.move_random()
@@ -39,6 +39,9 @@ while game_is_on:
         game_is_on = False
         score.game_over()
 
-
+    # Detect collision with its own tail
+    if snake.collide_with_tail():
+        game_is_on = False
+        score.game_over()
 
 screen.exitonclick()
