@@ -44,9 +44,11 @@ This challenge is to build a snake game where user can extend the snake length b
 
 ## Pong Game
 This challenge is to build a 2-player cooperative Pong game. Game rules: 
-1. The game asks for name inputs from every player. (for total of 2 players in this case)
-1. The game starts with a paddle in each side. The ball bounces everytime it collides with top, bottom wall and 2 paddles. 
-1. Player earns a score everytime the ball goes pass the paddle of the opponent
+1. The game asks for name inputs from every player. (for total of 2 players in this case).
+1. The game starts with a paddle in each side. The ball bounces everytime it collides with top, bottom wall and 2 paddles. First player uses (Up key or Down key) and second player uses (w key or s key) from the same keyboard to control the paddle movement.
+1. Player earns a score everytime the ball goes pass the paddle of the opponent.
+1. The speed of the ball accelerates when the ball restarts throwing from the center.
+1. The game ends when player's score reaches 5 and the game result displays on the screen
 
 ### Demo video
 <div align="center">
