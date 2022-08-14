@@ -33,7 +33,7 @@ is_game_on = True
 direction = "ahead"
 while is_game_on:
     screen.update()
-    time.sleep(0.03)
+    time.sleep(ball.ball_speed)
     ball.move_ball()
     ball.detect_wall()
     ball.detect_paddle(paddle_right=paddle_right, paddle_left=paddle_left)

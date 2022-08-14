@@ -11,6 +11,7 @@ class Ball(Turtle):
         self.penup()
         self.x_move = 10
         self.y_move = 10
+        self.ball_speed = 0.03
 
     def move_ball(self):
         new_x = self.xcor() + self.x_move
@@ -35,5 +36,6 @@ class Ball(Turtle):
     def restart_ball(self):
         rand_num_1 = [-1, 1]
         self.home()
+        self.ball_speed *= 0.9
         self.x_move *= -1
         self.y_move *= random.choice(rand_num_1)
