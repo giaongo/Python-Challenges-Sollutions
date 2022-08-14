@@ -5,6 +5,7 @@ These are collective solutions for Python Bootcamp's challenges
 * [Turtle module challenges](#turtle-module-challenges)
 * [Turtle racing challenge](#turtle-racing-challenge)
 * [Snack Game](#snack-game)
+* [Pong Game](#pong-game)
 
 ## Turtle module challenges  
 This comprises of solutions solved for challenges in the course: 
@@ -37,5 +38,21 @@ This challenge is to build a snake game where user can extend the snake length b
 <div align="center">
 
 [![Snack Game Demo Video](http://img.youtube.com/vi/NFfajjzF4Gg/0.jpg)](http://www.youtube.com/watch?v=NFfajjzF4Gg "Snack Game Demo Video")
+
+</div>
+
+
+## Pong Game
+This challenge is to build a 2-player cooperative Pong game. Game rules: 
+1. The game asks for name inputs from every player. (for total of 2 players in this case).
+1. The game starts with a paddle in each side. The ball bounces everytime it collides with top, bottom wall and 2 paddles. First player uses (Up key or Down key) and second player uses (w key or s key) from the same keyboard to control the paddle movement.
+1. Player earns a score everytime the ball goes pass the paddle of the opponent.
+1. The speed of the ball accelerates when the ball restarts throwing from the center.
+1. The game ends when player's score reaches 5 and the game result displays on the screen
+
+### Demo video
+<div align="center">
+
+[![Pong Game Demo Video](http://img.youtube.com/vi/eQUPIrqnlVc/0.jpg)](http://www.youtube.com/watch?v=eQUPIrqnlVc "Pong Game Demo Video")
 
 </div>
