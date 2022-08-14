@@ -7,7 +7,7 @@ from score import ScoreBoard
 
 screen = Screen()
 screen.setup(width=800, height=600)
-screen.bgcolor("black")
+screen.bgcolor("#010038")
 screen.title("The Pong Game")
 screen.tracer(0)
 player_left = screen.textinput(title="Player_1's Name", prompt="Name of first player:")
