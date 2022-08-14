@@ -16,7 +16,7 @@ class Result(Turtle):
 
     def post_result(self, winner):
         self.write("GAME OVER", align="center", font=("Arial", 30, "normal"))
-        self.goto(0, -20)
+        self.goto(0, -40)
         self.color(GREEN)
         if winner is not None:
             self.write(f"{winner} is the winner!!", align="center", font=("Comic Sans MS", 20, "normal"))
