@@ -3,6 +3,7 @@ from ball import Ball
 from liner import Liner
 from paddle import Paddle
 import time
+from result import Result
 from score import ScoreBoard
 
 screen = Screen()
@@ -21,16 +22,15 @@ paddle_right = Paddle(x_position=350)
 ball = Ball()
 score_left = ScoreBoard(position=(-200, 250), player_name=player_left)
 score_right = ScoreBoard(position=(200, 250), player_name=player_right)
+result = Result()
 
 screen.listen()
-
 screen.onkeypress(key="Up", fun=paddle_right.up)
 screen.onkeypress(key="Down", fun=paddle_right.down)
 screen.onkeypress(key="w", fun=paddle_left.up)
 screen.onkeypress(key="s", fun=paddle_left.down)
 
 is_game_on = True
-direction = "ahead"
 while is_game_on:
     screen.update()
     time.sleep(ball.ball_speed)
@@ -43,5 +43,15 @@ while is_game_on:
         elif ball.xcor() < -400:
             score_right.increase_score()
         ball.restart_ball()
+    if score_right.score == 5 or score_left.score == 5:
+        if score_right.score > score_left.score:
+            winner = score_right.player_name
+        elif score_right.score < score_left.score:
+            winner = score_left.player_name
+        else:
+            winner = None
+        result.post_result(winner)
+        is_game_on = False
+
 
 screen.exitonclick()
