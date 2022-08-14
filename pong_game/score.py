@@ -20,6 +20,3 @@ class ScoreBoard(Turtle):
 
     def post_score(self):
         self.write(f"{self.player_name} : {self.score}", False, align="center", font=("Comic Sans MS", 20, "normal"))
-
-    def post_game_over(self):
-        self.write("Game over", False, align="center", font=("Arial", 30, "normal"))
