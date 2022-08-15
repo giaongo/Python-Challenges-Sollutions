@@ -19,12 +19,9 @@ class Car(Turtle):
         self.color(rand_r, rand_g, rand_b)
 
     def random_position(self):
-        rand_x = random.randint(-280, 280)
-        rand_y = random.randint(-270, 280)
-        self.goto(rand_x, rand_y)
+        rand_y = random.randint(-250, 250)
+        self.goto(300, rand_y)
 
     def move_forward(self):
         self.setheading(180)
-        if self.xcor() > -300:
-            new_x = self.xcor() + 20
-            self.setx(new_x)
+        self.forward(15)
