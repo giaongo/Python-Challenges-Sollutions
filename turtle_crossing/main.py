@@ -27,6 +27,8 @@ while is_game_on:
         cars.create_car()
 
     for car in cars.cars_list:
+        if player.distance(car) < 20:
+            is_game_on = False
         car.move_forward()
         if car.xcor() < -300:
             car.clear()
