@@ -6,6 +6,7 @@ These are collective solutions for Python Bootcamp's challenges
 * [Turtle racing challenge](#turtle-racing-challenge)
 * [Snack Game](#snack-game)
 * [Pong Game](#pong-game)
+* [Turtle Crossing Game](#turtle-crossing-game)
 
 ## Turtle module challenges  
 This comprises of solutions solved for challenges in the course: 
@@ -54,5 +55,18 @@ This challenge is to build a 2-player cooperative Pong game. Game rules:
 <div align="center">
 
 [![Pong Game Demo Video](http://img.youtube.com/vi/eQUPIrqnlVc/0.jpg)](http://www.youtube.com/watch?v=eQUPIrqnlVc "Pong Game Demo Video")
+
+</div>
+
+## Turtle Crossing Game
+This challenge is to build a turtle crossing game. Game rules: 
+1. The player, in the form of turtle, has to cross the area full of cars passing by and avoids getting hit by the car. 
+1. The player returns to the origin and their game level increments by 1 after reaching the vertical top of the screen. The more level player experiences, the harder the game (i.e more car's speed and frequency) will be
+1. Game is over when the car collision is detected
+
+### Demo video
+<div align="center">
+
+[![Turtle Crossing Game Demo Video](http://img.youtube.com/vi/HrnfhqrnMhI/0.jpg)](http://www.youtube.com/watch?v=HrnfhqrnMhI "Turtle Crossing Game Demo Video")
 
 </div>
