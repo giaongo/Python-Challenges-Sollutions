@@ -45,7 +45,7 @@ while is_game_on:
         car = cars.cars_list[index]
 
         # When player hits the car -> game ends
-        if player.distance(car) < 17:
+        if player.distance(car) < 19:
             game_level.post_game_over()
             is_game_on = False
         car.move_forward()
