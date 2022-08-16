@@ -30,7 +30,7 @@ while is_game_on:
         game_level.increase_level()
         player.return_to_origin()
 
-    if number_of_loop % 3 == 0:
+    if number_of_loop % 6 == 0:
         cars.create_car()
 
     # Loop for car moving on the screen

@@ -20,7 +20,7 @@ class Car(Turtle):
 
     def random_position(self):
         rand_y = random.randint(-250, 250)
-        self.goto(300, rand_y)
+        self.goto(x=300, y=rand_y)
 
     def move_forward(self):
         self.setheading(180)
