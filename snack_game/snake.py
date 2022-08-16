@@ -63,3 +63,10 @@ class Snake:
             if self.head.distance(element) < 10:
                 return True
         return False
+
+    def reset(self):
+        for seg in self.snake_body:
+            seg.hideturtle()
+        self.snake_body.clear()
+        self.create_snake()
+        self.head = self.snake_body[0]
