@@ -1,7 +1,8 @@
 from turtle import Turtle
+import time
 
 
-class UserGuess(Turtle):
+class PlayerGuess(Turtle):
 
     def __init__(self, answer_state):
         super().__init__()
@@ -20,3 +21,10 @@ class UserGuess(Turtle):
         self.clear()
         self.goto(coordinate)
         self.write(f"{self.answer_state}", align="center", font=("Arial", 6, "bold"))
+
+    def notify_player(self, notify_text):
+        self.goto(x=0, y=-90)
+        self.color("red")
+        self.write(f"{notify_text}", align="center", font=("Arial", 15, "normal"))
+        time.sleep(1)
+        self.clear()
