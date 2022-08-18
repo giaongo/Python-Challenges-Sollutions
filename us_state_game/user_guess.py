@@ -19,5 +19,4 @@ class UserGuess(Turtle):
     def write_to_map(self, coordinate):
         self.clear()
         self.goto(coordinate)
-        self.write(f"{self.answer_state}", align="center", font=("Arial", 8, "bold"))
-
+        self.write(f"{self.answer_state}", align="center", font=("Arial", 6, "bold"))
