@@ -12,13 +12,14 @@ screen.addshape(image)
 turtle.shape(image)
 
 data = pandas.read_csv("50_states.csv")
-
+all_state_name = data["state"].tolist()
 correct_guess = []
 while len(correct_guess) < 50:
     answer_state = screen.textinput(title=f"{len(correct_guess)}/50 States Correct", prompt="What's another state's "
                                                                                             "name?").title()
+    if answer_state == "Exit":
+        break
     user_guess = UserGuess(answer_state)
-
     if answer_state in data.values:
         if answer_state not in correct_guess:
             coordinate = user_guess.retrieve_data(data)
@@ -29,5 +30,13 @@ while len(correct_guess) < 50:
     else:
         print("data not found")
 
-turtle.mainloop()
+remained_states = []
+for state in all_state_name:
+    if state not in correct_guess:
+        remained_states.append(state)
 
+remained_state_dict = {
+    "state": remained_states
+}
+
+pandas.DataFrame(remained_state_dict).to_csv("remained_states.csv")
