@@ -14,26 +14,20 @@ turtle.shape(image)
 data = pandas.read_csv("50_states.csv")
 
 correct_guess = []
-score = 0
-game_is_on = True
-while game_is_on:
-    if len(correct_guess) < 50:
-        answer_state = screen.textinput(title=f"{score}/50 States Correct", prompt="What's another state's name?")
-        answer_state = answer_state.title()
-        user_guess = UserGuess(answer_state)
+while len(correct_guess) < 50:
+    answer_state = screen.textinput(title=f"{len(correct_guess)}/50 States Correct", prompt="What's another state's "
+                                                                                            "name?").title()
+    user_guess = UserGuess(answer_state)
 
-        if answer_state in data.values:
-            if answer_state not in correct_guess:
-                coordinate = user_guess.retrieve_data(data)
-                user_guess.write_to_map(coordinate)
-                correct_guess.append(answer_state)
-                score += 1
-            else:
-                print("You have already guessed this word before")
+    if answer_state in data.values:
+        if answer_state not in correct_guess:
+            coordinate = user_guess.retrieve_data(data)
+            user_guess.write_to_map(coordinate)
+            correct_guess.append(answer_state)
         else:
-            print("data not found")
+            print("You have already guessed this word before")
     else:
-        game_is_on = False
+        print("data not found")
 
 turtle.mainloop()
 
