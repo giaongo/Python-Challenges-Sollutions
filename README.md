@@ -7,6 +7,7 @@ These are collective solutions for Python Bootcamp's challenges
 * [Snack Game](#snack-game)
 * [Pong Game](#pong-game)
 * [Turtle Crossing Game](#turtle-crossing-game)
+* [U.S State Guessing Game](#us-state-guessing-game)
 
 ## Turtle module challenges  
 This comprises of solutions solved for challenges in the course: 
@@ -68,5 +69,18 @@ This challenge is to build a turtle crossing game. Game rules:
 <div align="center">
 
 [![Turtle Crossing Game Demo Video](http://img.youtube.com/vi/HrnfhqrnMhI/0.jpg)](http://www.youtube.com/watch?v=HrnfhqrnMhI "Turtle Crossing Game Demo Video")
+
+</div>
+
+## U.S State Guessing Game
+This challenge is to build a U.S State game. The program is built by implementing Turtle and Pandas library.  
+1. The player tries to type into the prompt window as many American States as possible. 
+1. The program will check if the input state exists from the csv file. If data exists, the score increases and the state name will be written to the map with its data coordinates found from the file.
+1. Game ends when player gets all correct states or when they types "exit". The remained_states.csv will be created when program ends to show number of unguessed states left from the game.
+
+### Demo video
+<div align="center">
+
+[![US State Guessing Game Demo Video](http://img.youtube.com/vi/GgHUIplHS6o/0.jpg)](http://www.youtube.com/watch?v=GgHUIplHS6o "US State Guessing Game Demo Video")
 
 </div>
