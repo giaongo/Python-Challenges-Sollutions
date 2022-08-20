@@ -20,6 +20,7 @@ while len(correct_guess) < 50:
     answer_state = screen.textinput(title=f"{len(correct_guess)}/50 States Correct", prompt="What's another state's "
                                                                                             "name?").title()
     if answer_state == "Exit":
+        remained_states = [state for state in all_state_name if state not in correct_guess]
         break
     player_guess = PlayerGuess(answer_state)
     if answer_state in data.values:
@@ -33,10 +34,7 @@ while len(correct_guess) < 50:
         player_guess.notify_player("No data found")
 
 # Game exits and all remaining states will be written to a csv file
-remained_states = []
-for state in all_state_name:
-    if state not in correct_guess:
-        remained_states.append(state)
+
 
 remained_state_dict = {
     "state": remained_states
