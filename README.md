@@ -1,4 +1,4 @@
-# Python-Challenges-Sollutions
+# Python-Challenges-Solutions
 These are collective solutions for Python Bootcamp's challenges
 
 ## Tables of contents 
